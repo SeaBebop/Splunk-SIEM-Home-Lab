@@ -1,6 +1,6 @@
 # Lab Setup Guide
 
-## Step 0 – Base VM Setup
+##  Base VM Setup
 
 ### Virtual Machines Created
 
