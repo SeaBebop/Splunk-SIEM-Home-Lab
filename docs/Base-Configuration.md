@@ -1,4 +1,4 @@
-# Lab Setup Guide
+# Lab Setup
 
 ##  Base VM Setup
 
