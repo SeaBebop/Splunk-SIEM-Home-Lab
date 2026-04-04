@@ -1,8 +1,8 @@
 # Atomic Red Team: Threat Simulation and Detection Using Splunk 
 
-This project demonstrates practical detection engineering in a Windows domain environment. I built a small security lab consisting of a Windows Server 2022 Domain Controller, a domain-joined Windows 10 client, and Splunk Enterprise as the central SIEM. Using Sysmon with the Olaf Hartong configuration and Splunk Universal Forwarders, I collected endpoint logs to Splunk Enterprise. <br>
+This project demonstrates practical detection engineering in a Windows domain environment. I built a small security lab consisting of a Windows Server 2022 Domain Controller, a domain-joined Windows 10 client, and Splunk Enterprise as the central SIEM. Using Sysmon with the Olaf Hartong configuration and Splunk Universal Forwarders, I collected endpoint logs and sent them to Splunk Enterprise. <br>
 
-Then I simulated real-world adversary behavior with Atomic Red Team and built detections in Splunk to identify suspicious command execution and PowerShell activity.All logs were normalized to be CIM compliant, and a custom dashboard was created to visualize the attack activity and detection results.
+Then I simulated real-world adversary behaviour with Atomic Red Team and built Splunk detections to identify suspicious command execution and PowerShell activity. All logs were normalised to be CIM-compliant, and a custom dashboard was created to visualise attack activity and detection results.
 
 
 ### Quick Demo
