@@ -2,6 +2,8 @@
 This project features splunk detecting the malicious activies of a domain joined user in an internal network. 
 ### Quick Demo
 
+  <img src="assets/Security_Lab_Demo.gif" />
+
 ### Red Atomic Team attacks Used
 |  Technique ID    | TestNumber| Description                                                                       | 
 |------------------|-----------|-----------------------------------------------------------------------------------|
