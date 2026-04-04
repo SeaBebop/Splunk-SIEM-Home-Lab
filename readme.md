@@ -1,5 +1,5 @@
 # Atomic Red Team: Threat Simulation and Detection Using Splunk 
-This project features splunk detecting malicious activies of a domain joined user in an internal network. 
+This project features splunk detecting malicious activies of a domain joined user in an internal network. All logs are CIM compliant and a dashboard was created.
 ### Quick Demo
 
   <img src="assets/Security_Lab_Demo.gif" />
