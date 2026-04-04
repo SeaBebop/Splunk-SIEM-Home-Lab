@@ -1,42 +1,37 @@
-# Atomic Red Team: Threat Simulation and Detection Using Splunk 
+# Splunk SIEM Home Lab – Detection Engineering with Atomic Red Team
 
-This project demonstrates practical detection engineering in a Windows domain environment. I built a small security lab consisting of a Windows Server 2022 Domain Controller, a domain-joined Windows 10 client, and Splunk Enterprise as the central SIEM. Using Sysmon with the Olaf Hartong configuration and Splunk Universal Forwarders, I collected endpoint logs and sent them to Splunk Enterprise. <br>
+This project demonstrates practical **detection engineering** in a Windows Active Directory environment. I built a small security lab to simulate real adversary behavior using Atomic Red Team and detect it using Splunk SIEM and Sysmon.
 
-Then I simulated real-world adversary behaviour with Atomic Red Team and built Splunk detections to identify suspicious command execution and PowerShell activity. All logs were normalised to be CIM-compliant, and a custom dashboard was created to visualise attack activity and detection results.
+## Lab Architecture
+- **Windows Server 2022** – Domain Controller + Splunk Universal Forwarder + Sysmon (Olaf Hartong config)
+- **Windows 10** – Domain-joined client + Splunk Universal Forwarder + Sysmon
+- **Splunk Enterprise** – Central SIEM with custom indexes and CIM-compliant parsing
 
+## Techniques Simulated (MITRE ATT&CK)
+- **T1059.003** – Command and Scripting Interpreter (Windows Command Shell)
+- **T1059.001** – PowerShell Execution (basic and download/execute variants)
+- **T1562.001** – Impair Defenses (attempt to disable Windows Defender)
 
-### Quick Demo
+## Key Achievements
+- Configured domain environment with proper logging infrastructure
+- Ingested high-fidelity Sysmon logs into Splunk
+- Built and tuned detections for suspicious execution techniques
+- Created a custom dashboard to visualize attack activity
+- Documented troubleshooting process (time sync, Defender alerts, domain join issues, etc.)
 
+## Demo 
   <img src="assets/Security_Lab_Demo.gif" />
 
-### Red Atomic Team attacks Used
-|  Technique ID    | TestNumber| Description                                                                       | 
-|------------------|-----------|-----------------------------------------------------------------------------------|
-| **T1059.001**    | 1         |  Mimics attacker behavior by spawning cmd.exe with suspicious arguments           |
-| **T1059.001**    | 6         | Simulates trojan/downloader activity using encoded PowerShell to execute a payload|
-| **T1562.001**    | 1         | Emulates defense evasion by tampering with Windows Defender using PowerShell      |
-##  Base VM Setup
-
-### Virtual Machines Created
-
-Four virtual machines were prepared for this security lab:
-
-| VM Name       | Role                  | Operating System      |
-|---------------|-----------------------|-----------------------|
-| **Splunk**    | SIEM Server           | Ubuntu Server         |
-| **DC**        | Domain Controller     | Windows Server 2022   |
-| **Win10**     | Client Workstation    | Windows 10            |
-
-### Network Configuration
-
-Each virtual machine has the following network adapters:
-
-- **Adapter 1**: NAT  
-  → Used for internet access (updates, downloads, etc.)
-
-- **Adapter 2**: Internal Network (`SIEM-LAB`)  
-  → Isolated lab network for communication between all VMs
+## Dashboard
+  <img src="assets/Simple_Dashboard_1_pwr.gif" />
+  <img src="assets/Simple_Dashboard_cmd.gif" />
 
 
----
+## Challenges & Lessons Learned
+- Overcame time synchronization issues between Windows and Linux
+- Handled Windows Defender false positives during Atomic Red Team installation
+- Fixed inconsistent sourcetypes and inputs.conf parsing
+- Resolved domain join DNS and network profile problems
 
+## Technologies Used
+Splunk Enterprise, Sysmon (Olaf Hartong), Atomic Red Team, MITRE ATT&CK, Windows Event Logs, CIM-compliant logging
