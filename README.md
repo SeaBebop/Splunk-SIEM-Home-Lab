@@ -13,12 +13,6 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 -   [**T1562.001 Test Number 1**](./assets/T1562.001%231.gif) – Impair Defenses (attempt to disable Windows Defender)
 -  Detailed test results,SPL query, and Defender behavior → [**analysis.md**](https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/analysis.md)
 
-## Key Achievements
-- Configured domain environment with proper logging infrastructure  
-- Ingested high-fidelity Sysmon logs into Splunk  
-- Built and tuned detections for suspicious execution techniques  
-- Created a custom dashboard to visualize attack activity  
-- Documented troubleshooting process (time sync, Defender alerts, domain join issues, etc.)
 
 ## Demo (Example)
 <div style="display: flex; justify-content: center; gap: 1rem;">
