@@ -8,9 +8,10 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 - **Splunk Enterprise** – Central SIEM with custom indexes and CIM-compliant parsing  
 
 ## Techniques Simulated (MITRE ATT&CK)
-- **T1059.003** – Command and Scripting Interpreter (Windows Command Shell)  
-- **T1059.001** – PowerShell Execution (basic and download/execute variants)  
-- **T1562.001** – Impair Defenses (attempt to disable Windows Defender)  
+- [**T1059.001 Test Number 1**](./assets/T1059.001%231.gif) – Command and Scripting Interpreter (Windows Command Shell)  
+-  [**T1059.001 Test Number 6**](./assets/T1059.001%236.gif) – PowerShell Execution (basic and download/execute variants)  
+-   [**T1562.001 Test Number 1**](./assets/T1562.001%231.gif) – Impair Defenses (attempt to disable Windows Defender)
+- [**Detailed Demo Here**](https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/analysis.md)
 
 ## Key Achievements
 - Configured domain environment with proper logging infrastructure  
@@ -19,7 +20,7 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 - Created a custom dashboard to visualize attack activity  
 - Documented troubleshooting process (time sync, Defender alerts, domain join issues, etc.)  
 
-## Demo
+## Demo (Example)
 <div style="display: flex; justify-content: center; gap: 1rem;">
   <img src="assets/Security_Lab_Demo.gif" alt="Security Lab Demo" style="max-width: 100%; height: auto;" />
 </div>
@@ -34,6 +35,6 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 - Handled Windows Defender false positives during Atomic Red Team installation  
 - Fixed inconsistent sourcetypes and `inputs.conf` parsing  
 - Resolved domain join DNS and network profile problems  
-
+- [**Detailed Analysis Here**](https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/lessons.md)
 ## Technologies Used
 Splunk Enterprise, Sysmon (Olaf Hartong), Atomic Red Team, MITRE ATT&CK, Windows Event Logs, CIM-compliant logging
