@@ -25,16 +25,21 @@ This project demonstrates practical **detection engineering** in a Windows Activ
   <img src="assets/Security_Lab_Demo.gif" alt="Security Lab Demo" style="max-width: 100%; height: auto;" />
 </div>
 
+[***Image If Missing***](./assets/Security_Lab_Demo.gif)
+
 ## Dashboard
 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
   <img src="assets/Simple_Dashboard_cmd.gif" alt="Dashboard Command" style="max-width: 48%; height: auto;" />
 </div>
-index="client_sysmon" Image="*powershell.exe" EventCode=1 | timechart span=1m count by Image
+
+```index="client_sysmon" Image="*powershell.exe" EventCode=1 | timechart span=1m count by Image```
 
 ## inputs.conf
 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
 <img src="https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/assets/pics/Input_conf.jpg" style="max-width: 48%; height: auto;" />
 </div>
+
+[***Image If Missing***](./assets/pics/Input_conf.jpg)
 
 ## Challenges & Lessons Learned
 - Overcame time synchronization issues between Windows and Linux  
