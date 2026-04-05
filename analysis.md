@@ -13,6 +13,7 @@ The test injected a cmd.exe command, simulating attacker execution via the comma
   - technique_name = Windows Command Shell 
 - Example SPL query
   - ``` index="client_sysmon" Image="*cmd.exe" EventCode=1```
+
 **Observed Behavior on Endpoint**  <br>
 The Window Defender detected the interaction and provided a notification of a user inputed resolution. 
 
@@ -32,6 +33,7 @@ The test launches PowerShell, which reaches out to a remote URL and retrieves a 
   - technique_name = Downloading
 - Example SPL query
   - ``` index="client_sysmon" Image="*powershell.exe" EventCode=1```
+  
 **Observed Behavior on Endpoint**  <br>
 The Client Machine's Window Defender was unable to detect the download of the script. Upon reboot the activity remained undetected by the Window Defender's monitoring.
 
@@ -52,6 +54,7 @@ This test simulates an attacker impairing a defense tool by trying to stop or di
   - technique_name = Masquerading
 - Example SPL query
   - ``` index="client_sysmon" Image="*defender*" EventCode=1```
+
 **Observed Behavior on Endpoint** <br>
 The Client Machine's Window Defender not only detected the behavior of this activity but without even requesting the permission of the user decided to remove the test entirely. The gif below shows another attempt to use the attack, only for it to be unusable.
 <img src="./assets/T1562.001%231Result.gif" />
