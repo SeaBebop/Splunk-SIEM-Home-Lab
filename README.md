@@ -29,6 +29,7 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
   <img src="assets/Simple_Dashboard_cmd.gif" alt="Dashboard Command" style="max-width: 48%; height: auto;" />
 </div>
+index="client_sysmon" Image="*powershell.exe" EventCode=1 | timechart span=1m count by Image
 
 ## Challenges & Lessons Learned
 - Overcame time synchronization issues between Windows and Linux  
