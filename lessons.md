@@ -30,7 +30,7 @@ Domain join issues in VirtualBox labs are almost always DNS or network profile r
 **Solution:**  
 - Cleaned up `inputs.conf` on both Windows machines with explicit sourcetype and `renderXml = false`  
 - Installed the official Splunk Add-on for Sysmon  
-- Created dedicated indexes (`windows` and `windows_sysmon`)  
+- Created dedicated indexes (`windows`, `client`,`client_sysmon` and `windows_sysmon`)  
 
 **Key Takeaway:**  
 Forwarder configuration must be precise. Small mistakes in `inputs.conf` can cause major parsing and indexing problems.  
