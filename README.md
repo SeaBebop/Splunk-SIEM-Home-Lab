@@ -11,7 +11,7 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 - [**T1059.001 Test Number 1**](./assets/T1059.001%231.gif) – Command and Scripting Interpreter (Windows Command Shell)  
 -  [**T1059.001 Test Number 6**](./assets/T1059.001%236.gif) – PowerShell Execution (basic and download/execute variants)  
 -   [**T1562.001 Test Number 1**](./assets/T1562.001%231.gif) – Impair Defenses (attempt to disable Windows Defender)
--  Detailed test results and Defender behavior → [**analysis.md**](https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/analysis.md)
+-  Detailed test results,SPL query, and Defender behavior → [**analysis.md**](https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/analysis.md)
 
 ## Key Achievements
 - Configured domain environment with proper logging infrastructure  
