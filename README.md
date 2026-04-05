@@ -31,6 +31,11 @@ This project demonstrates practical **detection engineering** in a Windows Activ
 </div>
 index="client_sysmon" Image="*powershell.exe" EventCode=1 | timechart span=1m count by Image
 
+## inputs.conf
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+<img src="https://github.com/SeaBebop/Splunk-SIEM-Home-Lab/blob/main/assets/pics/Input_conf.jpg" style="max-width: 48%; height: auto;" />
+</div>
+
 ## Challenges & Lessons Learned
 - Overcame time synchronization issues between Windows and Linux  
 - Handled Windows Defender false positives during Atomic Red Team installation  
